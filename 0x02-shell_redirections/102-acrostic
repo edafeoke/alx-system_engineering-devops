@@ -1,2 +1,2 @@
-#!/bin/basecho
-$(cut -c 1 | tr -d "\n")
+#!/bin/bash
+echo $(cut -c 1 | tr -d "\n")
