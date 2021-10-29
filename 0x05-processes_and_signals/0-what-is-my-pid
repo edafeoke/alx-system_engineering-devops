@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
+# Displays current pid
 
 echo $$
