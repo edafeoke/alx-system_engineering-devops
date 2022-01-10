@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Install HAproxy
 
-apt-get install --no-install-recommends software-properties-common
-add-apt-repository ppa:vbernat/haproxy-2.4
-apt-get -y update
-apt-get install -y haproxy=2.4.\*
+sudo apt-get install --no-install-recommends software-properties-common
+sudo add-apt-repository ppa:vbernat/haproxy-2.4
+sudo apt-get -y update
+sudo apt-get install -y haproxy=2.4.\*
 
 echo "ENABLED=1" > /etc/default/haproxy
 
@@ -20,4 +20,4 @@ echo "
 	server 850-web-01 44.201.93.119:80 check
 " >> /etc/haproxy/haproxy.cfg
 
-service haproxy start
+sudo service haproxy start
