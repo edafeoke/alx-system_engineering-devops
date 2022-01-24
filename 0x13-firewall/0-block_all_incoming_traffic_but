@@ -2,7 +2,7 @@
 # install the ufw firewall and setup a few rules on web-01
 
 sudo apt-get -y install ufw
-ufw allow ssh
-ufw allow 80/tcp
-ufw allow 443/tcp
+sudo ufw allow 22/ssh
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
 sudo ufw enable
